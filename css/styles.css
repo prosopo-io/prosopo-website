@@ -1294,7 +1294,7 @@ a:hover {
 /*************************/
 /*     Pie Chart         */
 /*************************/
-
+/* https://stackoverflow.com/questions/56797060/css-only-pie-chart-how-to-add-spacing-padding-between-slices */
 
 .palette {
     --g: 10px; /* The gap between shapes*/
