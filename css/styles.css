@@ -76,7 +76,7 @@ h6 {
 }
 
 .p-large-white {
-    color: #091D2A;
+    color: #ffffff;
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
@@ -410,6 +410,7 @@ a:hover {
     background-color: #c33d3f;
     background-size: cover;
     text-align: center;
+    background-image: radial-gradient(circle farthest-side, #cb6869 5%, #c33d3f 15%, #091D2A 40%);
 }
 
 .header .text-container {
@@ -551,7 +552,9 @@ a:hover {
 .basic-4 {
     padding-top: 4rem;
     padding-bottom: 3rem;
+    /*background-image: radial-gradient(circle farthest-side, #f33d3f 5%, #d33d3f 15%, #c33d3f 30%);*/
     background-color: #c33d3f !important;
+    background-repeat: no-repeat;
 }
 
 .basic-4 h2 {
@@ -573,6 +576,13 @@ a:hover {
 /*******************/
 /*     Pricing     */
 /*******************/
+.red-circle {
+    background-image: radial-gradient(circle farthest-side, #c33d3f 40%, #c33d3f 80% , #ffffff );
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
 .cards-2 {
     position: relative;
     padding-top: 8rem;
@@ -616,7 +626,7 @@ a:hover {
 
 .cards-2 .card p {
     margin-bottom: 1.25rem;
-    text-align: left;
+    text-align: center;
 }
 
 .cards-2 .card .value {
@@ -881,6 +891,7 @@ a:hover {
 
     /* end of details 2 */
     /* Details 3 */
+
     .basic-4 .text-container {
         margin-bottom: 0;
     }
@@ -1089,12 +1100,12 @@ a:hover {
 
 
     .comparison .tickblue {
-        color: #141414;
+        color: #091D2A;
         font-size: 3em;
     }
 
     .comparison .tickbluetext {
-        color: #141414;
+        color: #091D2A;
         font-size: 1em;
     }
 
@@ -1180,4 +1191,96 @@ a:hover {
         color: #141414;
         font-size: 1rem !important;
     }
+}
+
+/*************************/
+/*     Pie Chart         */
+/*************************/
+
+
+.palette {
+  --g:10px; /* The gap between shapes*/
+--s:50px; /* the size*/
+
+height: 200px;
+width: 200px;
+position:relative;
+display:inline-block;
+overflow:hidden;
+}
+.palette > * {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border:var(--s) solid var(--c,red);
+    border-radius:50%;
+    clip-path:polygon(
+            calc(50% + var(--g)/2) 50%,
+            calc(50% + var(--g)/2) 0%,
+            calc(86.327% - var(--g)/2) 0%,
+            50% calc(50% - var(--g)/2));
+}
+.color1 {
+    transform:rotate(36deg);
+    --c:#141414;
+}
+.color2 {
+    transform:rotate(72deg);
+    --c:#4e439f;
+}
+.color3 {
+    transform:rotate(108deg);
+    --c:#d33d3f;
+}
+.color4 {
+    transform:rotate(144deg);
+    --c:#eb427e;
+}
+.color5 {
+    transform:rotate(180deg);
+    --c:#141414;
+}
+.color6 {
+    transform:rotate(-36deg);
+    --c:#4e439f;
+}
+.color7 {
+    transform:rotate(-72deg);
+    --c:#d33d3f;
+}
+.color8 {
+    transform:rotate(-108deg);
+    --c:#eb427e;
+}
+.color9 {
+    transform:rotate(-144deg);
+    --c:#4e43e6;
+}
+
+/*************************/
+/*     Padlock           */
+/*************************/
+
+.lock {
+    background: grey;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    margin-top: 60px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.lock:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border:20px solid grey;
+    top: -90px;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 35px 35px 0 0;
 }
