@@ -580,6 +580,12 @@ a:hover {
     background-color: #091D2A !important;
 }
 
+.article h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff
+}
+
 .article h3 {
     color: #ffffff
 }
@@ -591,6 +597,37 @@ a:hover {
 .article-image {
     padding: 0 20px 20px 0;
 }
+
+.article a {
+    color: #eb427e
+}
+
+/*********************/
+/*     News List     */
+/*********************/
+
+.news {
+    background-color: #091D2A;
+    height: 100%
+}
+
+.news-item, .news  a {
+    color: #eb427e;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.news-items {
+    list-style: none;
+}
+
+.news-items li:before {
+    color: #f00;
+    content: '✭ ';
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 
 
 /*******************/

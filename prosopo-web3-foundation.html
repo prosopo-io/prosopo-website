@@ -32,7 +32,7 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-light top-nav-collapse">
@@ -60,6 +60,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#demo">Demo </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="news.html">News </a>
                 </li>
                 <!--                <li class="nav-item">-->
                 <!--                    <a class="nav-link page-scroll" href="#litepaper">Lite Paper ⇲</a>-->
@@ -98,7 +101,7 @@
                 <div class="text-container">
 
                     <p>
-                        We're delighted to announce that Prosopo recently received funding from the Web3 Foundation that
+                        We're delighted to announce that Prosopo recently received funding from the <a href="https://web3.foundation/">Web3 Foundation</a> that
                         will help to build our decentralised human verification marketplace. We've designed a protocol
                         that will give Distributed Apps the power to secure their user traffic and prevent bot attacks,
                         whilst retaining a high level of decentralisation. Services like Prosopo are the key to moving
@@ -158,7 +161,7 @@
                         string here")</code>. Luckily, the <a
                             href="https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs">example
                         contracts</a>
-                        make use of plenty of these useful functions.
+                        demonstrate plenty of these useful functions.
                     </p>
                     <h3>Testing</h3>
                     <p>
@@ -209,5 +212,9 @@
 </div>
 
 
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
