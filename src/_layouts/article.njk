@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "head.njk" %}
+        <title>{{ title }}</title>
+        {% if site.env %}
+            <!-- capture the CSS content as a Liquid variable -->
+            {% set css %}{% include "styles.min.css" %}{% endset %}
+            <style>
+                {{css | safe}}
+            </style>
+        {% else %}
+            <link rel="stylesheet" href="/static/styles.min.css">
+        {% endif %}
+
+        <!-- Try and serve Google Fonts in the most efficent way possible -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css"/>
+        </noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        {% include "navbar.njk" %}
+        <!-- Header -->
+        <header id="header" class="article-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>{{ title }}</h1>
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+        <!-- Details 2 -->
+        <div class="article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                        {{ content | safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include "footer.njk" %}
+
+    </body>
+    {% include "scripts.njk" %}
+</html>

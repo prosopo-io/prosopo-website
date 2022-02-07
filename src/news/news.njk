@@ -1,0 +1,17 @@
+---
+layout: news.njk
+title: Prosopo News
+description: Latest news from Prosopo human verification marketplace
+---
+
+{% for article in collections.article -%}
+
+<li>
+  <a href="{{ article.url }}">
+    {{ article.data.title }}
+  </a>
+</li>
+
+{% endfor -%}
+
+{% include "scripts.njk" %}
