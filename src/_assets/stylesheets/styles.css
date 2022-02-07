@@ -1,8 +1,7 @@
 @import 'utils/bootstrap.css';
 @import 'utils/_accessibility.css';
 
-body,
-html {
+body, html {
 	width: 100%;
 	height: 100%;
 }
@@ -19,6 +18,7 @@ body, p {
 
 p-white {
 	color: #ffffff;
+	text-align: justify;
 }
 
 h1 {
@@ -582,6 +582,7 @@ a:hover {
 /*********************/
 .article {
 	background-color: #091D2A;
+	min-height: 38vh;
 }
 
 .article-header {
@@ -1036,6 +1037,12 @@ a:hover {
 
 	/* end of details 3 */
 	/* Features */
+
+	.card i {
+		font-size: 200px;
+		color: #141414
+	}
+
 	.cards-1 .card {
 		display: inline-block;
 		width: 296px;
@@ -1275,6 +1282,11 @@ a:hover {
 	.comparison .tl2 {
 		border-right: 0;
 	}
+
+	.card i {
+		font-size: 200px;
+		color: #141414
+	}
 }
 
 @media (max-width: 767px) {
@@ -1321,6 +1333,22 @@ a:hover {
 	.comparison .tickgreytext {
 		color: #141414;
 		font-size: 1rem !important;
+	}
+
+	.cards-1 .card, .cards-2 .card {
+		vertical-align: top;
+		margin-bottom: 1.5rem;
+	}
+	.card .testimonial-author {
+		font-size: 1rem;
+	}
+	.card i {
+		font-size: 100px;
+		color: #141414
+	}
+	.card .palette, .card img {
+		height: 100px;
+		width: 100px
 	}
 
 }
