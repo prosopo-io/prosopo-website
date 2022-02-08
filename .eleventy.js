@@ -35,6 +35,7 @@ module.exports = function (eleventyConfig) {
 		},
 		templateFormats: ["html", "md", "njk"],
 		htmlTemplateEngine: "njk",
+		markdownTemplateEngine: "njk",
 
 		// 1.1 Enable eleventy to pass dirs specified above
 		passthroughFileCopy: true
