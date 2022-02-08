@@ -1066,6 +1066,11 @@
         width: 100px
     }
 
+
+    .news {
+        height: auto
+    }
+
 }@media (max-width: 639px) {
 
     .comparison table {
@@ -1109,6 +1114,7 @@
         color: #141414;
         font-size: 1rem !important;
     }
+
 }@media print {
     h1, h2, h3, h4, p, li, span {
         color: #141414 !important;
