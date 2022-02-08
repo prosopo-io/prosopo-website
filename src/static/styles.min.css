@@ -210,7 +210,7 @@
     display: inline-block;
     text-align: center;
 }.team {
-    padding : 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     text-align: center;
 }.img-team img {
     width: 200px;
@@ -1102,6 +1102,18 @@
     .comparison .tickgreytext {
         color: #141414;
         font-size: 1rem !important;
+    }
+}@media print {
+    h1, h2, h3, h4, p, li, span {
+        color: #141414 !important;
+        text-shadow: 0 0 0 #ccc;
+    }
+
+    @media print and (-webkit-min-device-pixel-ratio: 0) {
+        h1, h2, h3, h4, p, li, span {
+            color: #141414 !important;
+            -webkit-print-color-adjust: exact;
+        }
     }
 }/*************************//*     Pie Chart         *//*************************//* https://stackoverflow.com/questions/56797060/css-only-pie-chart-how-to-add-spacing-padding-between-slices */.palette {
     --g: 10px; /* The gap between shapes*/

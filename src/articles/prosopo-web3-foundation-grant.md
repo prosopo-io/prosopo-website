@@ -81,7 +81,7 @@ future MVP is highlighted below:
 ### MVP
 
 <ul>
-<li>Migrate the contract to [OpenBrush](https://github.com/Supercolony-net/openbrush-contracts/tree/main)
+<li>Migrate the contract to <a href="https://github.com/Supercolony-net/openbrush-contracts/tree/main">OpenBrush</a>
 </li>
 <li>Work out a long term solution for contract upgradeability</li>
 <li>Perform load testing of the Provider node</li>

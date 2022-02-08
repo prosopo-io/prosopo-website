@@ -274,7 +274,7 @@ a:hover {
 }
 
 .team {
-    padding : 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     text-align: center;
 }
 
@@ -1422,6 +1422,20 @@ a:hover {
     .comparison .tickgreytext {
         color: #141414;
         font-size: 1rem !important;
+    }
+}
+
+@media print {
+    h1, h2, h3, h4, p, li, span {
+        color: #141414 !important;
+        text-shadow: 0 0 0 #ccc;
+    }
+
+    @media print and (-webkit-min-device-pixel-ratio: 0) {
+        h1, h2, h3, h4, p, li, span {
+            color: #141414 !important;
+            -webkit-print-color-adjust: exact;
+        }
     }
 }
 
