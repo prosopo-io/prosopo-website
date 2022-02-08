@@ -21,8 +21,9 @@
   width: auto;
   @apply bg-ws-blue-500 p-3 text-white;
 }body, html {
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    max-width: 100%
 }html {
     scroll-behavior: smooth;
 }body, p {
@@ -241,7 +242,7 @@
     top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
     bottom: 0;
     left: 100%;
-    width: 100%;
+    width: 100vw;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
@@ -302,7 +303,7 @@
     background-color: #f1f9fc;
     color: #ff6e84;
 }.navbar .dropdown-divider {
-    width: 100%;
+    width: 100vw;
     height: 1px;
     margin: 0.5rem auto 0.5rem auto;
     border: none;
@@ -575,7 +576,6 @@
     }
 
     .comparison table {
-        width: 100%;
         border-collapse: collapse;
         border-spacing: 0;
         table-layout: fixed;
@@ -672,7 +672,6 @@
         top: auto;
         bottom: auto;
         left: auto;
-        width: auto;
         padding-right: 0;
         padding-left: 0;
         background-color: transparent;
@@ -943,7 +942,6 @@
     }
 
     .comparison table {
-        width: 100%;
         border-collapse: collapse;
         border-spacing: 0;
         table-layout: fixed;
@@ -1004,12 +1002,10 @@
     }
 }@media (max-width: 767px) {
 
-
     .comparison {
         margin: 0 auto;
         font-size: 1rem;
         text-align: center;
-        width: 100%;
     }
 
 
@@ -1072,11 +1068,18 @@
 
 }@media (max-width: 639px) {
 
+    .comparison table {
+        word-break: break-word;
+
+    }
+
+    .comparison table th, .comparison table tr {
+        font-size: 0.8rem;
+    }
+
     .comparison {
         margin: 0 auto;
-        font-size: 1rem;
         text-align: center;
-        width: 100%;
     }
 
     .comparison .price-buy {
@@ -1084,7 +1087,7 @@
     }
 
     .comparison td, .comparison th {
-        padding: 10px 5px;
+        padding: 10px 2px;
         border-bottom: 1px solid #efefef !important;
     }
 
