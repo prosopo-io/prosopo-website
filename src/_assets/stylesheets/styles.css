@@ -647,7 +647,7 @@ a:hover {
 
 .news {
     background-color: #091D2A;
-    height: 100%;
+    height: 60%;
     padding-top: 4rem
 }
 
@@ -1325,8 +1325,11 @@ a:hover {
 
     .comparison {
         margin: 0 auto;
-        text-align: center
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
     }
+
 
     .comparison tbody tr:nth-child(odd) {
         display: table-row;
