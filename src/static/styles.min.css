@@ -1052,7 +1052,8 @@
 	.comparison {
 		margin: 0 auto;
 		font-size: 1rem;
-		text-align: center
+		text-align: center;
+		width: 100%;
 	}
 
 	.comparison .price-buy {
