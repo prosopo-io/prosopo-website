@@ -11,6 +11,18 @@ The [Prosopo protocol](https://github.com/prosopo-io/Grants-Program/blob/947a2c6
 user traffic and prevent bot attacks, whilst retaining a high level of decentralisation. Services like Prosopo are the
 key to moving blockchain applications from the fringes of society to everyday parts of our lives.
 
+## <span class="tickwhite">✭</span> Background
+
+[CAPTCHAs](https://en.wikipedia.org/wiki/CAPTCHA) were developed because of online spam, fraud, and abuse by bad actors attempting to profit from system
+weaknesses. In the world of Distributed Apps (DApps), the same patterns of abuse will likely emerge, yet there is no
+distributed service available to DApps to verify humanlike behaviour.
+
+Prosopo is designed to help human blockchain users prove their humanness whilst maintaining their privacy. Under the
+Prosopo model, Providers supply the market with CAPTCHAs and are rated by their ability to prevent bots and permit humans.
+Distributed Apps (DApps) implement CAPTCHAs as part of their contract interaction flow and their users receive
+reputation points for completing them. User reputation scores are stored on-chain and accessible to all Polkadot Dapps,
+for the benefit of the ecosystem. For a more detailed version, check out the [Grant Application](https://github.com/prosopo-io/Grants-Program/blob/947a2c66134f6d6b5b0f9ed147dbf0f66c27f5ad/applications/prosopo.md#w3f-open-grant-proposal).
+
 ## <span class="tickwhite">✭</span> Milestone 1
 
 The initial development began in October 2021 with the Prosopo [Protocol](https://github.com/prosopo-io/protocol/)
