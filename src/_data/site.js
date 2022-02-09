@@ -1,10 +1,10 @@
 module.exports = {
     "title": "Prosopo",
     "description": "Proving humanlike behaviour on the blockchain",
-    "url": "http://192.168.1.28:8080",
+    "url": "https://prosopo.io",
     "author": "Chris Taylor",
     "meta_data": {},
-    "env": process.env.ELEVENTY_ENV === 'dev',
+    "env": process.env.ELEVENTY_ENV === 'production',
     "team": [
         {name: "Chris Taylor", image: "/static/chris.jpeg", url: "https://www.linkedin.com/in/chris-taylor-6272032a/"},
         {name: "Caspar Roelofs", image: "/static/caspar.jpeg", url: "https://www.linkedin.com/in/caspar-roelofs/"},
