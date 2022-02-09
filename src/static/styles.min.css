@@ -458,6 +458,9 @@
     height: 200px;
     width: 200px;
     margin: auto;
+}.card i {
+    font-size: 200px;
+    color: #141414;
 }.cards-2 {
     position: relative;
     padding-top: 8rem;
@@ -757,9 +760,13 @@
 
     /* end of details 3 */
     /* Features */
+    .btn-solid-reg {
+        line-height: 1
+    }
+
     .card i {
         font-size: 200px;
-        color: #141414
+        color: #141414;
     }
 
     .cards-1 .card {
@@ -888,6 +895,8 @@
         padding-right: 3rem;
         padding-left: 3rem;
     }
+
+
 
     .cards-1 .card:nth-of-type(3n+2) {
         margin-right: 1.5rem;
@@ -1056,7 +1065,7 @@
 
     .card i {
         font-size: 100px;
-        color: #141414
+        color: #141414;
     }
 
     .card .palette, .card img {
