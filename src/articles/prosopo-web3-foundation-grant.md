@@ -7,7 +7,7 @@ layout: article.njk
 We're delighted to announce that Prosopo recently received funding from the [Web3 Foundation](https://web3.foundation/)
 to help build our decentralised human verification marketplace.
 The [Prosopo protocol](https://github.com/prosopo-io/Grants-Program/blob/947a2c66134f6d6b5b0f9ed147dbf0f66c27f5ad/applications/prosopo.md#w3f-open-grant-proposal)
-, designed with the aid of [Gimly](https://gimly.io), is designed to give Distributed Apps the power to secure their
+, designed and built with our partner [Gimly](https://gimly.io), will give Distributed Apps the power to secure their
 user traffic and prevent bot attacks, whilst retaining a high level of decentralisation. Services like Prosopo are the
 key to moving blockchain applications from the fringes of society to everyday parts of our lives.
 
