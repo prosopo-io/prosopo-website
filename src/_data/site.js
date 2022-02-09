@@ -1,6 +1,6 @@
 module.exports = {
     "title": "Prosopo",
-    "description": "Proving humanlike behaviour on the blockchain",
+    "description": "Human verification on the blockchain",
     "url": "https://prosopo.io",
     "author": "Chris Taylor",
     "meta_data": {},
