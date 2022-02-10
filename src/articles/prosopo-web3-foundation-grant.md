@@ -42,7 +42,7 @@ highlighted below.
 <div class="article-image">
 <div class="image-container">
 <img class="img-fluid"
-src="https://camo.githubusercontent.com/3c75b21f19abf3ff1263b73b9b1a4893041dc2082230b1436ec4af39ce26318b/68747470733a2f2f7777772e70726f736f706f2e696f2f696d672f6d61696e63617074636861666c6f772e6a7067"
+src="https://www.prosopo.io/img/maincaptchaflow.jpg"
 alt="alternative">
 </div>
 </div>
