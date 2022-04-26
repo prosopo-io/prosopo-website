@@ -350,6 +350,8 @@
     font-size: 1.875rem;
     line-height: 2.625rem;
 
+}#web3grants .cls-1 {
+    fill: white;
 }#web3grants {
     width: 100%;
 }/********************//*     Features     *//********************/.cards-1 {
@@ -857,9 +859,13 @@
     .navbar .logo-image img, .navbar .logo-image svg {
         width: auto;
         height: 57px;
-        fill: #1d1d1b;
+
         line-height: 75px;
         font-size: 18px;
+    }
+
+    .navbar .logo-image svg .cls-1 {
+        fill: #1d1d1b;
     }
 
     .navbar {
