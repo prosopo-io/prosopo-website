@@ -17,6 +17,5 @@ You must have experience with JavaScript, React, Typescript, Docker, and blockch
 salary is negotiable upon experience but we're talking in the range of 50k - 80k EUR per year plus stock options. This 
 is a great chance to bring your creativity to the early stages of a company and be involved in a revolutionary industry.
 
-If this sounds of interest, or if you have any questions, please get in touch via the button below with a CV and short 
-introduction. We're looking forward to hearing from you!
+UPDATE: This role has now been filled.
 

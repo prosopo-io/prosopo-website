@@ -438,8 +438,14 @@
     color: #ffffff
 }.article-image {
     padding: 0 20px 20px 0;
+}.article-image .caption {
+    text-align: center;
 }.article a {
     color: #eb427e
+}.article img {
+    text-align: center;
+    margin: auto;
+    display: table;
 }/*********************//*     News List     *//*********************/.news {
     background-color: #091D2A;
     height: 60%;
