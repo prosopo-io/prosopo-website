@@ -7,7 +7,22 @@
                     <h1 class="h1-large">Human verification on the blockchain</h1>
                     <p class="p-large-white">Mitigate bot attacks against your Polkadot smart contracts with the Prosopo
                         human verification system</p>
-                    <a class="btn-solid-lg" href="#intro">Find out more below</a></div> <!-- end of text-container -->
+                    <form id="subscribe-form" onsubmit="window.onEmailFormSubmit(event)">
+                        <div class="email-form">
+                            <div class="email-input email-form-item">
+                                <input name="email" type="email" placeholder="Your email for updates" required/> 
+                            </div>
+                            <button class="btn-solid-lg email-form-item" type="submit">
+                                Subscribe
+                                <div id="subscribe-loader" class="loader-wrapper">
+                                    <div class="loader"/>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                    <div id="subscribe-error" class="email-form-error"></div>
+                    <div id="subscribe-success" class="email-form-success">Thank you for your subscription!</div>
+                </div><!-- end of text-container -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
