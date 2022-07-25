@@ -20,14 +20,19 @@
 			$('.offcanvas-collapse').toggleClass('open')
 		})
 
+        window.hiddenElemDisplay = {}
+
 		function showElem(id) {
-            document.getElementById(id).style["visibility"] = "visible";
-            document.getElementById(id).style["position"] = "relative";
+            document.getElementById(id).style.display = window.hiddenElemDisplay[id] || 'inherit';
+            
         }
 
         function hideElem(id) {
-            document.getElementById(id).style["visibility"] = "hidden";
-            document.getElementById(id).style["position"] = "absolute";
+            const oldDisplay = window.getComputedStyle(document.getElementById(id)).display;
+            window.hiddenElemDisplay[id] = oldDisplay;
+            // since we set visibility to hidden in .njk files for first renders, we need to revert that here
+            document.getElementById(id).style.visibility = "visible";
+            document.getElementById(id).style.display = "none";
         }
 
         hideElem("subscribe-loader");

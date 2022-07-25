@@ -156,11 +156,12 @@
     color: #ffa100;
     width: 25.75rem;
     max-width: 100%;
-    margin: 0.3rem auto;
+    margin: 0 auto;
     font-weight: 600;
+    height: 0;
     font-size: 0.8rem;
     line-height: 1;
-    padding: 0 0.6rem;
+    padding: 0.3rem 0.6rem 0;
     text-align: start;
 }.email-form {
     display: flex;
