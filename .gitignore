@@ -5,3 +5,5 @@ yarn-error.log
 package-lock.json
 .idea
 src/_includes/styles.min.css
+.env
+.netlify
