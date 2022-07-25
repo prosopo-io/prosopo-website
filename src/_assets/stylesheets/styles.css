@@ -131,6 +131,109 @@ a:hover {
     background-color: #f1f9fc;
 }
 
+.loader-wrapper {
+    position: relative;
+    margin-left: 1.25rem;
+}
+
+.loader {
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 2px #979899;
+    border-bottom-color: #f1f9fc;
+    border-radius: 50%;
+    content: "";
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.btn-solid-lg:hover .loader {
+    border-color: #3d3599;
+    border-bottom-color: #594cda;
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+.email-form-success {
+    background: #f1f9fc;
+    color: #252c38;
+    width: 25.75rem;
+    height: 3.375rem;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form-error {
+    color: #ffa100;
+    width: 25.75rem;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    height: 0;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 0.3rem 0.6rem 0;
+    text-align: start;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.email-form-item {
+    width: 12.5rem;
+    display: flex !important;
+    margin: 0 0.375rem !important;
+    justify-content: center;
+}
+
+.email-input {
+    background: #f1f9fc;
+    height: 3.375rem;
+    border-radius: 1.625rem;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.email-input > input {
+    text-align: center;
+    border-radius: 32px;
+    position: absolute;
+    inset: 0;
+    background: none;
+    border: none;
+    padding: 0 0.625rem;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.email-input:hover > input,
+.email-input > input:focus-visible {
+    border: 1px solid #594cda;
+}
+
 .btn-solid-reg {
     display: inline-block;
     padding: 1.375rem 2.25rem 1.375rem 2.25rem;
